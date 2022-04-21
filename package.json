@@ -1,0 +1,13 @@
+{
+  "name": "chat_yarn",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "^0.0.1-security",
+    "moment": "^2.27.0",
+    "path": "^0.12.7",
+    "socket.io": "^2.3.0"
+  }
+}
