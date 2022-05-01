@@ -6,18 +6,18 @@ window.onload=function(){
     createForm.addEventListener('submit', e => {
         e.preventDefault();
 
-        const room = e.target.elements.newRoom.value;
-        createRoom(room,roomDisplay);
+        const roomName = e.target.elements.newRoom.value;
+        createRoom(roomName,roomDisplay);
 
         e.target.elements.newRoom.value='';
 		e.target.elements.newRoom.focus();
     });
 }
 
-function createRoom (room,roomDisplay){
+function createRoom (roomName,roomDisplay){
     var opt = document.createElement('option');
-    var text = document.createTextNode(room);
+    var text = document.createTextNode(roomName);
     opt.appendChild(text);
-    opt.value=room;
+    opt.value=roomName;
     roomDisplay.appendChild(opt);
 }
